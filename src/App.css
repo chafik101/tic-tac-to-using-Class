@@ -1,0 +1,35 @@
+
+main{
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.board{
+  width: 310px;
+  height: 310px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+.circle, .cross {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: red;
+}
+.cross{
+  color: green;
+}
